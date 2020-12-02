@@ -116,7 +116,7 @@ defmodule Phoenix.CodeReloader.Server do
 
   defp os_symlink({:win32, _}),
     do:
-      " On Windows, the lack of symlinks may even cause empty assets to be served. " <>
+      " On Windows, the lack of symlinks may even cause empty or old versions of assets to be served. " <>
         "Luckily, you can address this issue by starting your Windows terminal at least " <>
         "once with \"Run as Administrator\" and then running your Phoenix application."
 
